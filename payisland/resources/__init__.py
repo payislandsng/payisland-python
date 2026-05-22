@@ -1,0 +1,1 @@
+"""PayIsland API resources."""

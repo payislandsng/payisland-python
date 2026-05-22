@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "payisland"
+version = "0.1.0"
+description = "Official Python SDK for integrating with PayIsland payment APIs."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+    {name = "PayIsland"}
+]
+dependencies = [
+    "requests>=2.31.0"
+]
+keywords = ["payisland", "payments", "sdk"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.optional-dependencies]
+dev = [
+    "build>=1.0.0",
+    "pytest>=7.4.0",
+    "python-dotenv>=1.0.0",
+    "responses>=0.25.0",
+    "ruff>=0.4.0",
+    "twine>=5.0.0",
+]
+
+[project.urls]
+Homepage = "https://payislands.com"
+
+[tool.setuptools.packages.find]
+include = ["payisland*"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
