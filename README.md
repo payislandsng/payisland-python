@@ -1,5 +1,7 @@
 # PayIsland Python SDK
 
+![CI](https://github.com/payislandsng/payisland-python/actions/workflows/ci.yml/badge.svg)
+
 Official Python SDK for integrating with PayIsland payment APIs.
 
 ## Installation
